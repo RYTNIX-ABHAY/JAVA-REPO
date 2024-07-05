@@ -5,17 +5,16 @@ public class LC34 {
     public static void main(String[] args) {
       // Find the first and last position of target .. if not found return {-1,-1}
   int[] arr ={5,7,7,7,8,8,10};
-  int target=7;
+  int target=8;
 System.out.println(Arrays.toString(search1(arr, target)));
 
 
     }
     static int[] search1(int[] arr , int  target){
         int[] ans ={-1,-1};
-         int st= search(arr, target, true);
-         int ed=search(arr, target, false);
-         arr[0]=st;
-         arr[1]=ed;
+        arr[0]= search(arr, target, true);
+         arr[1]=search(arr, target, false);
+        
       return ans;
 
     }
