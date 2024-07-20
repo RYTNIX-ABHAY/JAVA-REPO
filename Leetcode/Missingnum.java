@@ -10,7 +10,7 @@ public class Missingnum {
         int i=0;
         while(i<arr.length){
             int correct=arr[i];
-            if (are[i]<arr.length &&arr[i]!=arr[correct]){
+            if (arr[i]<arr.length &&arr[i]!=arr[correct]){
                 swap(are,i,correct);
             }else{
                 i++;
