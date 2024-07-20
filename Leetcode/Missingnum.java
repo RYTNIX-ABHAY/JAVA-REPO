@@ -10,10 +10,10 @@ public class Missingnum {
         int i=0;
         while(i<arr.length){
             int correct=arr[i];
-            if (arr[i]==arr[correct]){
-                i++;
+            if (are[i]<arr.length &&arr[i]!=arr[correct]){
+                swap(are,i,correct);
             }else{
-                swap(arr,i,correct);
+                i++;
             }
         }
         for(int j=0;j<arr.length;j++){
